@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: border-box;
+}
+body
+{background: url("Coffee Beans.jpg")
+}
+#container {
+	width: 800px;
+	margin: 0 auto;
+	
+}
+.left{
+	width: 380px;
+	height: 200px;
+	background-color: burlywood; 
+	border-radius: 20px;
+	float: left;
+	margin: 0px 10px 10px 15px;
+	padding: 30px 10px 10px 10px;
+	border: solid 3px
+}
+
+.right{width: 380px;
+	height: 200px;
+	background-color: burlywood; 
+	border-radius: 20px;
+	float: left;
+	margin: 0px 0px 10px 0px;
+	padding: 30px 10px 10px 10px;
+	border: solid 3px
+}
+footer{
+	background-color: blanchedalmond;
+	clear: both;
+	visibility: visible
+}
+header > h1{text-align: center; background-color: blanchedalmond}
+
+
