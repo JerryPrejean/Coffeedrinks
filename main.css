@@ -6,6 +6,9 @@
 body
 {background: url("Coffee Beans.jpg")
 }
+
+
+
 #container {
 	width: 800px;
 	margin: 0 auto;
@@ -26,7 +29,7 @@ body
 	height: 200px;
 	background-color: burlywood; 
 	border-radius: 20px;
-	float: left;
+	float: right;
 	margin: 0px 0px 10px 0px;
 	padding: 30px 10px 10px 10px;
 	border: solid 3px
@@ -39,3 +42,17 @@ footer{
 header > h1{text-align: center; background-color: blanchedalmond}
 
 
+.oswald-{
+  font-family: "Oswald", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right a:link{
+	color:saddlebrown;
+	text-decoration: none;
+}
+.right a:hover{
+	font-size: 1.2em;
+}
