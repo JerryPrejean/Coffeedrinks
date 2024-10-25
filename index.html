@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	
-	<div id="container">
+		
 		
 		<header>
 		  <h1 class="oswald-">Coffee Drinks that you can enjoy</h1>
@@ -17,7 +16,28 @@
 		<article class="left"></article>
 	
 		  <article class="right">
-			<p><a href="https://www.google.com/">Google</a></p>
+			<p><a href="https://www.google.com/">Google</a><p style="background-color: antiquewhite">Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p  id="demo"></p>
+	<div id="container"> 	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+	  
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+		</p>
 			
 			</article>
 		<footer><a href="coffee.html"><img src="Coffee Cup.png" width="150" height="150" alt="Coffee Cup" usemap="#Map"></a>
@@ -25,7 +45,7 @@
 			
 			
 			
-			
+		
 			Copyright Jerry Prejean 2024</footer>
 		
 		
@@ -36,4 +56,6 @@
 		
 		
 </body>
+	
+
 </html>
